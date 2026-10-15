@@ -40,13 +40,13 @@
     const apiKey = "edcd25c8e3f9a65687b06968cf29ec70";
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=imperial&q=houston";
     async function checkWeather(){
-        const respoonse = await fetch(apiUrl + '&appid=&{apiKey}')
+        const response = await fetch(apiUrl + `&appid=${apiKey}`);
         var data = await response.json();
 
         console.log(data);
         
     }
-    checkweather();
+    checkWeather();
  </script>
 </body>
 </html>
